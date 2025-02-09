@@ -1,11 +1,11 @@
 
 "use client";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAws, FaJava } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: 'About me',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+  // description: "Lorem ipsum dolor sit amet consectetur adipisicing.",
   info: [
     {
       fieldName: 'Name',
@@ -33,7 +33,7 @@ const about = {
 const experience = {
   icon: '/assets/icons/badge.png',
   title: "My Experience",
-  description: "Lorem ipsum dolor sit amet, consectetur",
+  description: "Passionate front-end developer specializing in React.js, crafting dynamic and responsive web applications.",
   items: [
     {
       company: 'Tata Consultancy Services',
@@ -41,8 +41,8 @@ const experience = {
       duration: '2023-Present',
     },
     {
-      company: 'Amazon Work Services',
-      position: 'Software Engineer',
+      company: 'Amazon Web Services',
+      position: 'Cloud Intern',
       duration: 'Summer-2023',
     }
   ]
@@ -51,7 +51,7 @@ const experience = {
 const education = {
   icon: '/assets/icons/cap.png',
   title: "My Education",
-  description: "Lorem ipsum dolor sit amet, consectetur",
+  // description: "Lorem ipsum dolor sit amet, consectetur",
   items: [
     {
       institution: 'JSPMs Rajarshi Shahu College of Engineering',
@@ -72,7 +72,7 @@ const education = {
 }
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  // description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -99,9 +99,14 @@ const skills = {
       name: 'Tailwind.css',
     },
     {
-      icon: <FaFigma />,
-      name: 'Figma',
+      icon: <FaAws />,
+      name: 'AWS',
     },
+    {
+      icon: <FaJava />,
+      name: 'JAVA',
+    },
+
 
   ]
 };
@@ -159,7 +164,7 @@ const Resume = () => {
             <TabsContent value="education" className='w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">
                   {education.description}</p>
                 <ScrollArea className="h-[400px]">
 

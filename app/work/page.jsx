@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { image } from "../../public/thumb1.webp"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,37 +22,37 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
+    category: "Weather API",
     title: "Project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-    image: "/public/thumb1.webp",
+      "Built a Weather API app with React.js, displaying real-time weather updates with a user-friendly interface.",
+    stack: [{ name: "React.js" }],
+    image: "/wet.jpg",
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "Full Stack",
+    category: "Netflix 2.0",
     title: "Project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/public/thumb2.jpeg",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "Frontend",
-    title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.",
+      "Created Netflix 2.0 with React.js, implementing a dynamic UI and smooth content streaming experience.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/public/thumb3.png",
-    live: "",
+    image: "/net.jpeg",
+    live: "https://tflix-build.web.app/",
     github: "",
   },
+  // {
+  //   num: "03",
+  //   category: "Frontend",
+  //   title: "Project 3",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.",
+  //   stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+  //   image: "/public/thumb3.png",
+  //   live: "",
+  //   github: "",
+  // },
 ];
 
 const Work = () => {
